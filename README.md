@@ -2,7 +2,7 @@
 
 Show Time and Date on Top for Webpage with Javascript built-in Date() function
 
-divide planner into morning, noon and night
+divide planner into morning, afternoon and night
 
 allow input into text area and click save to save
 
