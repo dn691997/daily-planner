@@ -18,21 +18,51 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload="realtimeClock()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="clock" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <!-- Create div & Add class row and col from bootstrap -->
+      <div class="row">
+        <div class="col time row align-items-center">8 AM - 12 PM</div>
+        <textarea
+          id="first"
+          class="col-8 align-items-start"
+          placeholder="Write your task here"
+        ></textarea>
+        <button class="col-2 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col time row align-items-center">12 PM - 4 PM</div>
+        <textarea
+          id="second"
+          class="col-8 align-items-start"
+          placeholder="Write your task here"
+        ></textarea>
+        <button class="col-2 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col time row align-items-center">4PM - 6PM</div>
+        <textarea
+          id="third"
+          class="col-8 align-items-start"
+          placeholder="Write your task here"
+        ></textarea>
+        <button class="col-2 saveBtn">Save</button>
+      </div>
+      <!-- end of class & row addition -->
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- add js files and link it to index.html -->
+    <script src="./assets/script.js"></script>
   </body>
 </html>
